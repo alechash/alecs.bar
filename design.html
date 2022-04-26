@@ -1,0 +1,140 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<body style="margin:0;background:blue">
+	<nav style="position:fixed;top:0;left:0;right:0;background:white;z-index:10">
+		<p style="float:left;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-left:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="/index.html">Alec Wilson</a>
+		</p>
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="/photos.html">Photos</a>
+		</p>
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="/design.html">Design Work</a>
+		</p>
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="https://alecw.net">Portfolio</a>
+		</p>
+	</nav>
+	<footer style="position:fixed;bottom:0;left:0;right:0;background:white;z-index:10">
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="https://github.com/alechash" target="_blank">GitHub</a>
+		</p>
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="https://instagram.com/txtjude" target="_blank">Instagram</a>
+		</p>
+		<p style="float:right;color:blue;font-weight:bolder;font-family:'Roboto', sans-serif;padding-right:15px;">
+			<a style="color:blue;text-decoration:none" onmouseover="this.style.borderBottom='2px solid blue'" onmouseout="this.style.borderBottom='none'" href="https://unsplash.com/alechash" target="_blank">Unsplash</a>
+		</p>
+	</footer>
+	<div style="background:blue;margin:0;min-height:100vh">
+		<h1 style="font-size:40px;color:white;font-family:'Zilla Slab', serif;margin-top:80px;margin-left:20px">Design Work</h1>
+		<p style="padding:20px;margin-left:20px;margin-right:20px;color:white;font-weight:bold;font-family:'Roboto', sans-serif;max-width:600px;border:3px solid white">
+			This is all my design work, I love design. Some of my favorite design types are brutalist, monotype, and flat. Although, sites like stripe.com are pretty solid in their own ways.<br><br>Please look at some of my designs below
+		</p>
+		<br>
+		<div class="row">
+			<div class="column">
+				<span>
+					<img src="/assets/benchscout.com.jpg">
+					<span style="height:auto">
+						<p style="display:inline">
+							<a href="https://benchscout.com" target="_blank">BenchScout</a>
+						<p>
+					</span>
+				</span>
+			</div>
+			<div class="column">
+				<span style="display:inline;height:auto">
+					<img src="/assets/car.png">
+					<span style="height:auto">
+						<p style="display:inline;height:auto">
+							<a>Car</a>
+						<p>
+					</span>
+				</span>
+				<span style="display:inline;height:auto">
+					<img src="/assets/car.png">
+					<span style="height:auto">
+						<p style="display:inline;height:auto">
+							<a>Car</a>
+						<p>
+					</span>
+				</span>
+			</div>
+			<div class="column">
+			</div>
+			<div class="column">
+			</div>
+		</div>
+		<br><br><br><br><br>
+	</div>
+	<style>
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 20px;
+		}
+
+		/* Create four equal columns that sits next to each other */
+		.column {
+			flex: calc(1/4);
+			max-width: calc(1/4);
+			padding: 0 4px;
+			position: relative;
+		}
+
+		.column span img {
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		.column span>span {
+			opacity: 0;
+			transition: .5s ease;
+		}
+
+		.column span:hover>span {
+			opacity: 1;
+		}
+
+		.column span>span p {
+			display: block;
+			color: white;
+			font-size: 20px;
+		}
+
+		.column span>span p a {
+			text-decoration: none;
+			color: black;
+			font-weight: bolder;
+			font-family: 'Roboto', sans-serif;
+			background: white;
+			padding: 5px;
+			transition: 0.2s;
+		}
+
+		.column span>span p a:hover {
+			background: black;
+			color: white;
+		}
+
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 800px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+	</style>
+</body>
