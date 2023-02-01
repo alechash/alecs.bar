@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Alec Wilson | Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@0;1&family=Germania+One&family=Space+Grotesk:wght@400;500;700&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<br><br><br>
+	<nav>
+		<h1>Portfolio</h1>
+		<links>
+			<a href="/index.html">Home</a>
+			<a href="/resume.pdf" download>Download Resume</a>
+		</links>
+	</nav>
+	<main>
+		<br>
+		<h1>Apps</h1>
+		<br>
+		<item>
+			<img src="/assets/LiftKit_icon.png">
+			<itemdetails>
+				<h2><a href="https://liftkit.app" target="_blank">LiftKit</a> <a href="https://testflight.apple.com/join/sypo02rN"><img src="/assets/download_black.svg" height="20px"></a></h2>
+				<p>LiftKit is a health app for beginners to experts trying to lift, exercise, and eat healthy. </p>
+			</itemdetails>
+		</item>
+		<br><br>
+		<h1>Knowledge <color>&</color> Skills</h1>
+		<item>
+			<itemdetails>
+				<h2>iOS, macOS, Swift, Swift<color>UI</color>, CoreData, CloudKit, Xcode</h2>
+				<p>With these aforementioned skills, I have the knowledge and experience building multiplatform apps for the Apple ecosystem.</p>
+			</itemdetails>
+		</item>
+		<br><br>
+		<item>
+			<itemdetails>
+				<h2>Web, Node<color>JS</color>, JavaScript, HTML, CSS</h2>
+				<p>These skills and experience positions me to build full-stack web applications.</p>
+			</itemdetails>
+		</item>
+		<br><br>
+		<item>
+			<itemdetails>
+				<h2>Servers, SQL, NoSQL, FireBase</h2>
+				<p>Building scalable APIs, databases, and backend processing is possible with this set of skills.</p>
+			</itemdetails>
+		</item>
+		<br><br>
+		<item>
+			<itemdetails>
+				<h2>Python, C<color>++</color>, Microsoft Access</h2>
+				<p>Hey, you never know when you're going to need these for internal apps, data-processing, or storing data records!</p>
+			</itemdetails>
+		</item>
+	</main>
+</body>
+
+<style>
+	color {
+		color: var(--color)
+	}
+
+	itemdetails h2 a {
+		text-decoration: underline;
+		color: black;
+	}
+
+	main {
+		max-width: 500px;
+		padding: 20px;
+		margin: auto;
+	}
+
+	main h1 {
+		border-left: 5px solid var(--color);
+		margin: 30px auto;
+		padding-left: 15px;
+	}
+
+	itemdetails h2 {
+		font-family: 'Space Grotesk', sans-serif;
+		margin-bottom: 10px;
+		font-weight: 300;
+	}
+
+	itemdetails p {
+		font-family: 'Vollkorn', serif;
+	}
+
+	item {
+		padding: 0 30px;
+	}
+
+	item>img {
+		width: 70px;
+		height: 70px;
+		float: left;
+		position: relative;
+		padding: 15px;
+		border-radius: 25px;
+	}
+
+	:root {
+		--color: crimson;
+	}
+
+	nav {
+		background: beige;
+		color: var(--color);
+		font-weight: heavy;
+		font-family: 'Germania One', cursive;
+		position: relative;
+		max-width: 560px;
+		margin: auto;
+	}
+
+	h1 {
+		color: black;
+		font-size: 35px;
+		font-family: 'Space Grotesk', sans-serif;
+	}
+
+	nav h1 {
+		font-size: 40px;
+		padding: 0 30px;
+	}
+
+	nav p {
+		font-size: 20px;
+		font-family: 'Averia Serif Libre', cursive;
+		color: black;
+	}
+
+	links {
+		display: block;
+		margin-top: 15px;
+		font-family: 'Vollkorn', serif;
+		padding: 0 30px;
+	}
+
+	links a {
+		display: inline-block;
+		padding: 6px 10px;
+		border: 2px solid black;
+		border-radius: 5px;
+		margin: 5px 3px;
+		transition: 0.15s;
+		color: black;
+		text-decoration: none;
+	}
+
+	links a:hover {
+		background: var(--color);
+		color: beige;
+		border-color: var(--color);
+		cursor: url('/sword.png'), auto;
+	}
+
+	::selection {
+		background: var(--color);
+	}
+
+
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		background: beige;
+	}
+
+	html {
+		cursor: url('/sword.png'), auto;
+	}
+</style>
+
+<script>
+	colorArray = ["red", "blue", "crimson", "purple", "orange", "brown", "coral", "blueviolet", "darkorange", "green", "gold", "saddlebrown", "springgreen", "violet"];
+
+	const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+	document.querySelector(':root').style.setProperty('--color', randomColor);
+</script>
+
+</html>
