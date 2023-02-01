@@ -1,37 +1,116 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@900&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<body style="max-width:700px;margin:auto">
-	<p style="background:black;color:white;text-align:center">• • • • • • • • • • • • • • • • • • • • • • •</p>
-	<h1 style="padding:15px 0 15px 15px;margin:0;font-family: 'Inter', sans-serif;">Alec Wilson</h1>
-	<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">I take photos and build apps. Below are my photos. <a href="/apps.html" style="color: blue;">Here</a> are my apps.</p>
-	<h3 style="padding:0 0 0 15px;margin:0;font-family: 'Inter', sans-serif;">Who am I?</h3>
-	<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">Who am I: I am a student in high school, I love freestyle skiing in the winter which is where you hit rails and jumps. I also love cars and going to meets.<br><br>I am lucky enough
-		to have a family that loves to travel the world and I love my family for that. When traveling, I love to take photos and learn about the history!<br><br>I like to develop apps in my free time, I go to the gym everyy day which was the
-		inspiration for LiftKit, you can see more info about it below under the 'Apps' section.</p>
-	<h3 style="padding:0 0 0 15px;margin:0;font-family: 'Inter', sans-serif;">Socials</h3>
-	<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">
-		<a href="https://instagram.com/txtjude" style="color: blue;">Instagram</a> | <a href="https://instagram.com/thewilski" style="color: blue;">Skiing Instagram</a> | <a href="https://unsplash.com/@alechash" style="color: blue;">Unsplash</a> | <a
-		 href="https://github.com/alechash" style="color: blue;">GitHub</a> | <a href="https://alecw.net" style="color: blue;">Software Portfolio</a>
-	</p>
-	<h3 style="padding:0 0 0 15px;margin:0;font-family: 'Inter', sans-serif;">Apps</h3>
-	<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">
-		<a href="/apps/liftkit.html" style="color: blue;">LiftKit</a>
-	</p>
-	<h3 style="padding:0 0 0 15px;margin:0;font-family: 'Inter', sans-serif;">Companies</h3>
-	<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">
-		<a href="https://instagram.com/txtjude" style="color: blue;">OOOk Development</a>
-	</p>
-	<h1 style="padding:15px 0 15px 15px;margin:0;font-family: 'Inter', sans-serif;">My Photos</h1>
+<head>
+	<meta charset="utf-8">
+	<title>Hello there, I am Alec Wilson!</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@0;1&family=Germania+One&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<content>
+			<p>Hello there, I am</p>
+			<h1>Alec Wilson.</h1>
+			<p>Welcome to my website. I am a software engineer by passion and education.</p>
+			<links>
+				<a href="/resume.pdf" download>Resume</a>
+				<a href="/portfolio.html">Portfolio</a>
+				<a target="_blank" href="https://www.linkedin.com/in/alec-j-wilson">LinkedIn</a>
+				<a target="_blank" href="https://instagram.com/txtjude">Instagram</a>
+				<a target="_blank" href="https://unsplash.com/@alechash">Unsplash</a>
+				<a target="_blank" href="https://github.com/alechash">GitHub</a>
+			</links>
+		</content>
+	</nav>
 </body>
-<script>
-	var photos = ["PGsSq1VX1A4", "M9JYklvFF9I", "5CijVR6FwNU", "k0bhv3Bh4bw", "N5zAhdF2adk", "Tp7JzAC6w_U", "EIyvoNgcOhY", "LGURNSwq4rQ", "wcg7VcYvWYU", "ynOj5cmFJYU", "GNtEhJOGW44", "xb-UsT1dTKI", "xwZj1d9adbM", "HFO7l0Yh2pY", "kO6JmceSk7I",
-		"1zSuLiXp77g", "qK5pnTpsces", "YZeZ7imuO2o", "jUyMZ5NXaoM", "CWLXLJPocKc", "H0xQW6mz3cg", "chnatR4NlAU", "Wd0C54f8h5I", "0aYdzQCuob4", "zJroh88JHD4", "1wTFIv75K4U"
-	]
-	for (i = 0; i < photos.length; i++) {
-		document.body.innerHTML += `<a href="https://unsplash.com/photos/${photos[i]}" style="width: calc(100%-120px);"><img src="https://source.unsplash.com/${photos[i]}" style="padding: 5px; max-width: 500px;border:3px solid black;margin: 15px"><a>`
+
+<style>
+	:root {
+		--color: crimson;
 	}
-	document.body.innerHTML += `<p style="font-family: 'Abyssinica SIL', serif;padding: 0 15px">Like my photos? I post them on <a href="https://unsplash.com/@alechash" style="color: blue;">Unsplash</a>! Follow me there! Or follow me on <a href="https://instagram.com/txtjude" style="color: blue;">Instagram</a>, however, those are more personal photos.</p>
-	<p style="background:black;color:white;text-align:center">• • • • • • • • • • • • • • • • • • • • • • •</p>`
+
+	nav {
+		background: beige;
+		color: var(--color);
+		font-weight: heavy;
+		font-family: 'Germania One', cursive;
+		height: 100vh;
+		position: relative;
+		max-width: 500px;
+		margin: auto;
+	}
+
+	nav content {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	nav h1 {
+		font-size: 20vw;
+		text-shadow: -1.5vw 1.5vw black;
+		color: var(--color);
+	}
+
+	nav p {
+		font-size: 20px;
+		font-family: 'Averia Serif Libre', cursive;
+		color: black;
+	}
+
+	links {
+		display: block;
+		margin-top: 15px;
+		font-family: 'Vollkorn', serif;
+	}
+
+	links a {
+		display: inline-block;
+		padding: 6px 10px;
+		border: 2px solid black;
+		border-radius: 5px;
+		margin: 5px 3px;
+		transition: 0.15s;
+		color: black;
+		text-decoration: none;
+	}
+
+	links a:hover {
+		background: var(--color);
+		color: beige;
+		border-color: var(--color);
+		cursor: url('/sword.png'), auto;
+	}
+
+	::selection {
+		background: var(--color);
+	}
+
+
+	* {
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		background: beige;
+	}
+
+	html {
+		cursor: url('/sword.png'), auto;
+	}
+</style>
+
+<script>
+	colorArray = ["red", "blue", "crimson", "purple", "orange", "brown", "coral", "blueviolet", "darkorange", "green", "gold", "saddlebrown", "springgreen", "violet"];
+
+	const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+	document.querySelector(':root').style.setProperty('--color', randomColor);
 </script>
+
+</html>
